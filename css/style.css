@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Birthstone&family=East+Sea+Dokdo&family=Hahmlet:wght@300&family=Zilla+Slab&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* 노멀라이징 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+/* 커스터마이징 */
+
+
+html>body {
+    font-family: 'Zilla Slab', 'Noto Sans KR', serif;
+    color: #0000;
+    text-underline-position: under;
+  
+
+}
+
+.con {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* .first-page */
+
+.first-page-bg {
+   
+    height: 1006px;
+   
+}
+
+.first-page-contents  .bg-items {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.bg-items .app-img {
+     animation: fly 1.5s linear infinite;
+}
+
+@keyframes fly{
+    0%{
+
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
+
+    100%{
+
+    }
+}
+
+.app-introduce {
+    margin-top: 40px;
+}
+
+.pet-image{
+    margin-top: -18%;
+   margin-left: 150px;
+}
+
+.first-page-contents  .design-tool {
+    position: absolute;
+    bottom: 100px;
+    left:550px;
+    
+}
+
+
+/* overview-page */
+
+.overview-page{
+    background-color: #FFFFFC;
+}
+
+.overview-introduce {
+    position: absolute;
+    top: 10%;
+    left: 360px;
+}

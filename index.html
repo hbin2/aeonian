@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,75 @@
     <title>이오니언</title>
 
 
-    <script src="./js/jquery-3.6.0.min.js.lnk"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 
-    
+
   <!-- 테일윈드 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-  integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- aos 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
 
-      <!-- aos 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
-
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-
-    <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
+
 <body>
-    
+
+    <div class="layout-wrap con">
+        <section class="first-page ">
+
+            <div class="first-page-contents relative">
+                <img src="./image/첫페이지/첫페이지 배경.png" class="first-page-bg w-full  block object-cover" alt="첫페이지 배경">
+
+                <div class="bg-items">
+                    <img src="./image/첫페이지/어플아이콘.png" class=" app-img block object-cover " alt="">
+
+                    <img src="./image/첫페이지/어플 소개.png" class="app-introduce block object-cover" alt="">
+
+                    <img src="./image/첫페이지/펫 배경.png" class="pet-image block object-cover" alt="">
+
+
+                </div>
+
+                <div class="design-tool">
+                    <ul class="flex gap-8">
+                        <li><img src="./image/첫페이지/Figma.png" alt=""></li>
+                        <li><img src="./image/첫페이지/Illustrator.png" alt=""></li>
+                        <li><img src="./image/첫페이지/Photoshop.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="overview-page relative">
+
+            <img src="./image/이오니언 오버뷰/배경.png" class="w-full block object-cover" alt="">
+
+            <div class="overview-introduce">
+
+                <div class="flex gap-10">
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-duration="1000"><img src="./image/이오니언 오버뷰/아이폰이미지1.png" alt=""></div>
+                    <div><img src="./image/이오니언 오버뷰/아이폰 이미지2.png" alt=""></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
 </body>
+
 </html>
