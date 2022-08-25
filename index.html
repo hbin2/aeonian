@@ -9,14 +9,16 @@
 
 
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 
 
-  <!-- 테일윈드 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 테일윈드 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- aos 불러오기 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 
@@ -30,8 +32,8 @@
 
 <body>
 
-    <div class="layout-wrap con">
-        <section class="first-page ">
+    <div class="layout-wrap ">
+        <div class="first-page con">
 
             <div class="first-page-contents relative">
                 <img src="./image/첫페이지/첫페이지 배경.png" class="first-page-bg w-full  block object-cover" alt="첫페이지 배경">
@@ -53,29 +55,87 @@
                         <li><img src="./image/첫페이지/Photoshop.png" alt=""></li>
                     </ul>
                 </div>
+
+
             </div>
 
 
-        </section>
+        </div>
 
-        <section class="overview-page relative">
-
+        <div class="overview-page relative con">
             <img src="./image/이오니언 오버뷰/배경.png" class="w-full block object-cover" alt="">
 
-            <div class="overview-introduce">
+            <div class="section2-content_1 ">
 
-                <div class="flex gap-10">
-                    <div data-aos="fade-up"
-                    data-aos-anchor-placement="top-center" data-aos-duration="1000"><img src="./image/이오니언 오버뷰/아이폰이미지1.png" alt=""></div>
-                    <div><img src="./image/이오니언 오버뷰/아이폰 이미지2.png" alt=""></div>
+                <div class="overview-introduce flex">
+    
+                    <div class="flex gap-10">
+                        <div data-aos="fade-right" data-aos-delay="100" data-aos-easing="easeInCubic"
+                            data-data-aos-duration="1000"><img src="./image/이오니언 오버뷰/아이폰이미지1.png" alt=""></div>
+                        <div data-aos="fade-right" data-aos-delay="300" data-aos-easing="easeInCubic"
+                            data-data-aos-duration="1000"><img src="./image/이오니언 오버뷰/아이폰 이미지2.png" alt=""></div>
+                    </div>
+    
+                    <div class="introduce ml-32 mt-36">
+                        <img src="./image/이오니언 오버뷰/일러스트.png" alt="">
+    
+                        <div class="mt-10" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                            <span>반려동물과 함께할 장소를 찾으시나요? <br>
+                                  어려울것 없어요!&nbsp;<span class="font-bold">이오니언</span>과 함께라면말이에요 :)</span>
+                        </div>
+                      
+                    </div>
+    
                 </div>
+    
+              
+    
+    
+            </div>
+    
+            <div class="section2-content_2 ">
+                <div class="overview-contents flex flex-col">
+                    <div class="flex">
+                       <img src="./image/이오니언 오버뷰/오버뷰.png" class="overview-title " alt="">
+    
+                       <div class="ml-28">
+                        <span>반려동물을 키우면서 외식할 때나, 카페에 가거나, 여행을 갈 때 함께할 수 없어서 어쩔 수 없이 <br>
+                            집이나 호텔, 지인들에게 맡기는 경우가 많은데요 함께할 수 있는 곳이 있더라도 주변에 어디에 있는지 <br>
+                            알 수가 없어서 그동안 곤란해하셨을 여러분들을 위해 편리하게 찾아볼 수 있도록 만든 서비스 플랫폼입니다.</span>
+                       </div>
+                    </div>
+     
+                    <div class="overview-contents-items">
+                        <img src="./image/이오니언 오버뷰/Vector 3.png" class="mt-32" alt="">
 
+                        <ul class="flex justify-center gap-40">
+                            <div data-aos="fade-right" data-aos-delay="100" data-aos-easing="easeInCubic"
+                            data-data-aos-duration="1000"><li><img src="./image/이오니언 오버뷰/1.png" alt=""></li></div>
+                            <div data-aos="fade-right" data-aos-delay="300" data-aos-easing="easeInCubic"
+                            data-data-aos-duration="1000"><li><img src="./image/이오니언 오버뷰/2.png" alt=""></li></div>
+                            <div data-aos="fade-right" data-aos-delay="500" data-aos-easing="easeInCubic"
+                            data-data-aos-duration="1000"><li><img src="./image/이오니언 오버뷰/3.png" alt=""></li></div>
+                        </ul>
+                    </div>
+                 
+    
+                  
+                </div>
             </div>
 
-        </section>
+          
+          
+        
+        </div>
+
+      
+
 
 
     </div>
+
+
+
 
 </body>
 

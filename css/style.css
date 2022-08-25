@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Alef&family=Birthstone&family=East+Sea+Dokdo&family=Hahmlet:wght@300&family=Zilla+Slab&display=swap');
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Birthstone&family=East+Sea+Dokdo&family=Hahmlet:wght@300&family=Noto+Sans+KR&family=Zilla+Slab&display=swap');
 
 /* 노멀라이징 */
 
@@ -33,12 +33,18 @@ video {
 
 /* 커스터마이징 */
 
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-html>body {
-    font-family: 'Zilla Slab', 'Noto Sans KR', serif;
-    color: #0000;
+
+html > body {
+    font-family: 'Zilla Slab','Noto Sans KR', serif;
+    color: black;
     text-underline-position: under;
-  
 
 }
 
@@ -73,7 +79,7 @@ html>body {
     }
 
     50%{
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
 
     100%{
@@ -102,10 +108,55 @@ html>body {
 
 .overview-page{
     background-color: #FFFFFC;
+    font-family: 'Noto Sans KR';
 }
 
 .overview-introduce {
     position: absolute;
     top: 10%;
     left: 360px;
+}
+
+.introduce{
+    font-family: 'GmarketSansMedium';
+}
+
+.introduce div > span{
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+
+
+.overview-contents{
+    position: absolute;
+    top: 40%;
+    left: 360px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.overview-title {
+    width: 250px;
+    height: 50px;
+}
+
+
+
+.overview-contents-items{
+   position: relative;
+   margin-top: 90px;
+}
+
+.overview-contents-items > img{
+    position: absolute;
+   
+}
+
+.overview-contents-items > ul{
+    position: absolute;
+    margin-top: -10px;
 }
