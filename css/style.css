@@ -31,6 +31,21 @@ video {
     display: block;
 }
 
+/* 라이브러리 */
+.cell {
+    float: left;
+}
+
+.cell-r {
+    float: right;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 /* 커스터마이징 */
 
 @font-face {
@@ -41,27 +56,31 @@ video {
 }
 
 
-html > body {
-    font-family: 'Zilla Slab','Noto Sans KR', serif;
+html>body {
+    font-family: 'Zilla Slab', 'Noto Sans KR', serif;
     color: black;
     text-underline-position: under;
+    max-width: 1920px;
+
 
 }
 
 .con {
-    max-width: 1920px;
+    width: 1900px;
     margin: 0 auto;
+    font-family: 'Noto Sans KR';
+    background-color: #FFFFFC;
 }
 
 /* .first-page */
 
 .first-page-bg {
-   
+
     height: 1006px;
-   
+
 }
 
-.first-page-contents  .bg-items {
+.first-page-contents .bg-items {
     position: absolute;
     top: 110px;
     left: 50%;
@@ -70,46 +89,42 @@ html > body {
 }
 
 .bg-items .app-img {
-     animation: fly 1.5s linear infinite;
+    animation: fly 1.5s linear infinite;
 }
 
-@keyframes fly{
-    0%{
+@keyframes fly {
+    0% {}
 
-    }
-
-    50%{
+    50% {
         transform: translateY(20px);
     }
 
-    100%{
-
-    }
+    100% {}
 }
 
 .app-introduce {
     margin-top: 40px;
 }
 
-.pet-image{
+.pet-image {
     margin-top: -18%;
-   margin-left: 150px;
+    margin-left: 150px;
 }
 
-.first-page-contents  .design-tool {
+.first-page-contents .design-tool {
     position: absolute;
     bottom: 100px;
-    left:550px;
-    
+    left: 550px;
+
 }
 
 
-/* overview-page */
-
-.overview-page{
-    background-color: #FFFFFC;
+/* second-page */
+.second-page {
     font-family: 'Noto Sans KR';
 }
+
+
 
 .overview-introduce {
     position: absolute;
@@ -117,11 +132,11 @@ html > body {
     left: 360px;
 }
 
-.introduce{
+.introduce {
     font-family: 'GmarketSansMedium';
 }
 
-.introduce div > span{
+.introduce div>span {
     letter-spacing: 2px;
     font-size: 20px;
     line-height: 40px;
@@ -130,9 +145,9 @@ html > body {
 
 
 
-.overview-contents{
+.overview-contents {
     position: absolute;
-    top: 40%;
+    top: 43%;
     left: 360px;
     font-size: 17px;
     letter-spacing: 1px;
@@ -146,17 +161,284 @@ html > body {
 
 
 
-.overview-contents-items{
-   position: relative;
-   margin-top: 90px;
+.overview-contents-items {
+    position: relative;
+    margin-top: 90px;
 }
 
-.overview-contents-items > img{
+.overview-contents-items>img {
     position: absolute;
+
+}
+
+.overview-contents-items>ul {
+    position: absolute;
+    margin-top: -10px;
+}
+
+.brand-logo {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.logo>img {
+    margin-left: auto;
+}
+
+
+.app-introduce {
+    margin-top: -10px;
+}
+
+.app-icon {
+    margin-right: 105px;
+}
+
+.app-detail {
+    padding-top: 70px;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+
+}
+
+
+/* typography-wrap */
+
+.typography-wrap .typo-background {
+    margin-top: -13%;
+}
+
+.typography-contents {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.typo-introduce {
+    position: absolute;
+    top: 17%;
+    left: 360px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.typo-img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.typo-img>div:last-child {
+    margin-left: 295px;
+    margin-top: -5px;
+}
+
+/* color-wrap */
+
+.color-wrap{
+    width: 100%;
+    height: 400px;
+}
+
+.color-contents{
+    margin-top: -5%;
+}
+
+.color-introduce{
+    position: absolute;
+    top: 0;
+    left: 360px;
+}
+
+.color-introduce > div{
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+.color-img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+/* home-screen_wrap */
+
+.home-screen_wrap{
+    width: 100%;
+    height: 970px;
+}
+
+.home-screen_items{
+    position: absolute;
+    top: 50%;
+    left: 360px;
+    transform: translateY(-50%);
+}
+
+.home-creen_introduce{
+    margin-top: 10%;
+}
+
+.home-creen_introduce > div{
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    margin-top: 32px;
    
 }
 
-.overview-contents-items > ul{
+/* aeonian-pick_wrap */
+.aeonian-pick_wrap{
+    width: 100%;
+    height: 672px;
+   
+}
+
+.aeonian-pick_introduce > div{
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    margin-top: 32px;
+}
+
+.aeonian-pick_items{
     position: absolute;
+    top: 50%;
+    left: 360px;
+    transform: translateY(-50%);
+}
+
+.aeonian-pick_introduce{
+    margin-top: 10%;
+}
+
+.aeonian-pick_phone-img > div:last-child{
+    margin-left: -15%;
+    margin-top: -11%;
+}
+
+/* MyFavoritePlace-wrap */
+.MyFavoritePlace-wrap{
+    width: 100%;
+    height: 579px;
+    margin-top: 150px;
+}
+
+.MyFavoritePlace-items{
+    position: absolute;
+    top: 50%;
+    left: 360px;
+    transform: translateY(-50%);
+}
+
+.MyFavoritePlace-phone > div:last-child{
+    margin-top: 10%;
+    margin-left: -10%;
+}
+
+.MyFavoritePlace-introduce{
+    margin-top: 11%;
+}
+
+.MyFavoritePlace-introduce > div{
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    margin-top: 32px;
+}
+
+/* MyPage-wrap */
+.MyPage-wrap{
+    width: 100%;
+    height: 1905px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.Mypage-items_1{
+    position: absolute;
+    top: 28%;
+    left: 360px;
+    transform: translateY(-50%);
+}
+
+.Mypage-items_introduce > div{
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin-top: 32px;
+}
+
+.Mypage-items_phone > img{
+    margin-top: 25%;
+    margin-left: auto;
+}
+
+.Mypage-items_2{
+    position: absolute;
+    top: 85%;
+    left: 360px;
+    transform: translateY(-50%);
+}
+
+
+.Mypage-items2_phone >div:last-child{
+    margin-top: -30%;
+    margin-left: 15px;
+}
+
+/* last-page_wrap */
+.last-page_wrap{
+    width: 100%;
+    position: relative;
+    margin-top: 290px;
+
+}
+
+.last-page-items_1{
+    position: absolute;
+    top: 3%;
+    right: 350px;
+}
+
+.items-1_first > div:last-child{
+    margin-left: -50px;
+}
+
+.items-1_first .app-icon {
+    animation: fly 1.5s linear infinite;
+}
+
+@keyframes fly {
+    0% {}
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {}
+}
+
+  
+
+.items-1_second{
+    margin-left: 58%;
     margin-top: -10px;
+}
+
+.last-page-items_2{
+    width: 1028px;
+    height: 805px;
+    position: absolute;
+    top: 28%;
+    left: 140px;
 }

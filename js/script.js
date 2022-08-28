@@ -1,5 +1,3 @@
-
-
-// aos 라이브러리
-
+$('body').imagesLoaded(function() {
   AOS.init();
+});
