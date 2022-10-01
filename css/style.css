@@ -29,6 +29,7 @@ img,
 video {
     max-width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 /* 라이브러리 */
